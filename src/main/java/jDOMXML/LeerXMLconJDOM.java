@@ -34,7 +34,7 @@ public class LeerXMLconJDOM {
                 List<Element> listAutores =libro.getChildren("autor");
                     for(Element autor: listAutores){
                         System.out.println("Autor: ");
-                        //Element autor = listAutores.get(t);
+
                         Attribute att2 = autor.getAttribute("nombre");
                         System.out.println("Nombre: " + att2.getValue());
                         System.out.println("Fecha de nacimiento : " + autor.getChild("fechanac").getText());
