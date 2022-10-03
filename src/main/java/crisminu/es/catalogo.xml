@@ -1,0 +1,68 @@
+<biblioteca>
+    <sección id="literatura">
+        <libro>
+            <autor>
+
+            </autor>
+            <titulo>
+
+            </titulo>
+            <editorial>
+
+            </editorial>
+        </libro>
+    </sección>
+    <sección id="religion">
+        <libro>
+            <autor>
+
+            </autor>
+            <titulo>
+
+            </titulo>
+            <editorial>
+
+            </editorial>
+        </libro>
+    </sección>
+    <sección id="lenguas">
+        <libro>
+            <autor>
+
+            </autor>
+            <titulo>
+
+            </titulo>
+            <editorial>
+
+            </editorial>
+        </libro>
+    </sección>
+    <sección id="matematicas">
+        <libro>
+            <autor>
+
+            </autor>
+            <titulo>
+
+            </titulo>
+            <editorial>
+
+            </editorial>
+        </libro>
+    </sección>
+    <sección id="artes">
+        <libro>
+            <autor>
+
+            </autor>
+            <titulo>
+
+            </titulo>
+            <editorial>
+
+            </editorial>
+        </libro>
+    </sección>
+
+</biblioteca>
