@@ -23,28 +23,28 @@ public class LeerXMLconJDOM {
             List<Element> listaLibros = classElement.getChildren();
             System.out.println("----------------------------");
 
-            for (int i = 0; i < listaLibros.size(); i++) {
-                Element libros = listaLibros.get(i);
-                System.out.println("\nLibros :"
-                        + libros.getName());
-                Attribute att1 =  libros.getAttribute("id");
+            for (Element libro: listaLibros) {
+                //Element libro = listaLibros.get(i);
+                System.out.println("\nLibros :" + libro.getName());
+                Attribute att1 =  libro.getAttribute("id");
                 System.out.println(att1.getValue() );
-                System.out.println("Título : " + libros.getChild("titulo").getText());
-                System.out.println("Autor : " + libros.getChild("autor").getAttribute("nombre"));
-                System.out.println("Fecha de publicación: " + libros.getChild("fechapubl").getText());
-                List<Element> listAutores =libros.getChildren("autor");
-                    for(int t=0; i<listAutores.size(); t++){
-                        Element autores = listAutores.get(t);
-                        System.out.println("Fecha de nacimiento : " + autores.getChild("fechanac").getText());
-                        System.out.println("Lugar de nacimiento : " + autores.getChild("lugar").getText());
+                System.out.println("Título : " + libro.getChild("titulo").getText());
+                //System.out.println("Autor : " + libro.getChild("autor").getAttribute("nombre"));
+                System.out.println("Fecha de publicación: " + libro.getChild("fechapubl").getText());
+                List<Element> listAutores =libro.getChildren("autor");
+                    for(Element autor: listAutores){
+                        System.out.println("Autor: ");
+                        //Element autor = listAutores.get(t);
+                        Attribute att2 = autor.getAttribute("nombre");
+                        System.out.println("Nombre: " + att2.getValue());
+                        System.out.println("Fecha de nacimiento : " + autor.getChild("fechanac").getText());
+                        System.out.println("Lugar de nacimiento : " + autor.getChild("lugar").getText());
                     }
 
 
             }
-        } catch (JDOMException e) {
+        } catch (JDOMException | IOException e) {
             e.printStackTrace();
-        } catch (IOException ioe) {
-            ioe.printStackTrace();
         }
     }
 }
