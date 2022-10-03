@@ -34,7 +34,7 @@ public class LeerXMLconJDOM {
                 List<Element> listAutores =libro.getChildren("autor");
                     for(Element autor: listAutores){
                         System.out.println("Autor: ");
-                        //lkl
+                        //test
 
                         Attribute att2 = autor.getAttribute("nombre");
                         System.out.println("Nombre: " + att2.getValue());
