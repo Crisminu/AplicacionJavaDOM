@@ -13,7 +13,7 @@ import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
 
-public class Main {
+public class LeerXMLconDOM {
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
         File file = new File("src/main/java/crisminu/es/catalogo.xml");
         DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();

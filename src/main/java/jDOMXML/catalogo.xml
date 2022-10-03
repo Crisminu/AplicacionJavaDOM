@@ -51,12 +51,12 @@
         <titulo>
             Crimen y castigo
         </titulo>
+        <fechapubl>
+            1866
+        </fechapubl>
         <autor nombre="Fiódor Dostoievski">
             <fechanac>11 de noviembre de 1821</fechanac>
             <lugar>Moscú</lugar>
         </autor>
-        <fechapubl>
-            1866
-        </fechapubl>
     </libro>
 </catalogo>
